@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add Product</title>
+</head>
+<body id="add-product-page">
+    <header class="header">
+        <div class="user--profile">
+            <div class="user--profile-name">
+                <span><strong>فاطمه،</strong> به حساب کاربریت خوش اومدی </span>
+            </div>
+            <div class="user--profile--photo image">
+                <img class="profile-image" src="files/woman.png" alt="profile photo">
+            </div>
+        </div>
+        <div class="shopping--card image">
+            <img src="files/shopping-cart.png" alt="shpping card">
+        </div>
+    </header>
+    <div class="add-product--container">
+        <div class="add-product--inputs">
+            <input type="text" id="name" placeholder="نام کتاب" required>
+            <input type="text" id="author" placeholder="نام نویسنده" required>
+            <input type="text" id="pub" placeholder="نام انتشارات" required>
+            <input type="text" id="books-price" placeholder="قیمت کتاب" required>
+            <input type="file" id="books-img">
+            <textarea  id="desc" cols="30" rows="10" placeholder="توضیحات کتاب" required></textarea>
+            <a href="" id="add-product-btn" class="btn">اضافه کن</a>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

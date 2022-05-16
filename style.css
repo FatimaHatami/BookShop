@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200&display=swap');
+html{
+    font-size: 62.5%;
+    font-family: 'Vazirmatn', sans-serif;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login--container{
+    height: 60vh;
+    width: 35rem;
+    max-width: 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.16);
+    border-radius: 5px;
+}
+.login--header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login--header h1{
+    font-weight: 700;
+}
+.login--logo{
+    height: 10rem;
+    width: 10rem;
+    margin: 2rem 0 0 0 ;
+}
+.login--main{
+    text-align: center;
+}
+.login--main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login--main form *:not(:first-child){
+    margin-top: 10px;
+}
+.login--main form input{
+    outline: none;
+    border: 1px solid rgb(209, 207, 207);
+    padding: 10px 3px;
+    border-radius:5px;
+    width: 80%;
+    direction: rtl;
+}
+.login--main *:not(:first-child){
+    color: rgb(31, 30, 30);
+    text-decoration: none;
+}
+#login-msg{
+    color: #8d082e;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.login--btn{
+    width: 80%;
+
+}
+.btn{
+    display: block;
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #FC1C5C;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* PRODUCTS PAGE */
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    border-bottom: 1px solid rgb(235, 235, 235);
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-direction: column; */
+
+}
+.shopping--card{
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.shopping--card::after{
+    content: '2';
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background-color: #FC1C5C;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2px;
+}
+.user--profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px 20px;
+}
+.user--profile-name span{
+    font-size: 16px;
+    margin: 0 10px;
+}
+.user--profile--photo{
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(196, 193, 193);
+}
+.image{
+    height: 40px;
+    width: 40px;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.products{
+    direction: rtl;
+}
+.products--heading{
+    margin: 20px 55px -10px ;
+
+}
+.products--container{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+    height: 100%;
+    width: 280px;
+    margin: 20px;
+    border: 1px solid rgb(230, 228, 228);
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.16);
+    transition: .2s;
+    cursor: pointer;
+}
+.product-box{
+    margin: 30px 15px;
+}
+.product--delete{
+    height: 30px;
+    width: 30px;
+    margin: 8px auto 8px 8px;
+    transition: .2s;
+}
+.product--delete img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.product--delete:active{
+    transform: scale(1.4);
+}
+
+.product:active{
+    border: 1px solid #FC1C5C;
+}
+.product:active > .product--image img{
+    transform: scale(1.16);
+}
+.product--image{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+.product--image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all .2s;
+}
+
+.product--name{
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(34, 34, 34);
+}
+.product--description{
+    color: rgb(59, 57, 57);
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.products--details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    
+}
+.product--price{
+    font-weight: 700;
+    font-size: 12px;
+}
+.product--buy a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #FC1C5C;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.product-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    direction: rtl;
+    font-size: 16px;
+}
+
+.product--img{
+    height: 400px !important;
+    width: 400px !important;
+    padding: 20px 10px;
+}
+.product--img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.product--details{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.product--gist{
+    text-align: justify;
+    margin-top: 10px;
+}
+.product--info{
+    display: flex;
+    flex-direction: column;
+}
+
+.product--info *{
+    margin: 10px 0;
+}
+.product--details .product--buy{
+    margin-top: 10px;
+}
+.product--details .product--buy a{
+    font-size: 14px;
+}
+.user--account{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.add--product{
+    height: 30px;
+    width: 30px;
+}
+.add--product img{
+    height: 100%;
+    width:100%;
+    object-fit: contain;
+}
+.add-product--container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-product--inputs{
+    width: 400px;
+    box-shadow: 1px 1px 3px 5px rgba(0,0,0,0.16);
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+}
+.add-product--inputs *{
+    margin: 10px;
+    padding: 5px 10px;
+}
+.add-product--inputs input[type=text],
+.add-product--inputs textarea{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 3px rgba(0,0,0,0.16);
+    height: 30px;
+}
+#desc{
+    resize: none;
+    height: 200px;
+}
